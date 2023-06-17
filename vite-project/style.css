@@ -143,3 +143,53 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* UTILITY CLASSES */
+
+.grid--xs {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.grid--sm {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.grid--md {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid--lg {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid--xl {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.ring--link {
+  
+}
+
+/* GENERAL STYLES */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  background-color: var(--neutral-off-white);
+  color: var(--neutral-dark-blue);
+}
+
+.body__wrapper {
+  overflow: hidden;
+  padding: var(--space-xs);
+}
+
+.wrapper {
+  margin-inline: auto;
+}
+
