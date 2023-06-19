@@ -1,5 +1,21 @@
 import './style.css'
 
+const toggleOpenAttribute = (arrayOfItems) => {
+	arrayOfItems.forEach((i) => {
+		const isOpen = i.hasAttribute("open");
+		isOpen ? i.removeAttribute("open") : i.setAttribute("open", "");
+	});
+};
+
+const toggleTabIndexes = (arrayOfItems) => {
+	arrayOfItems.forEach((i) => {
+		const isTabbable = i.tabIndex > -1;
+		isTabbable
+			? i.setAttribute("tabindex", "-1")
+			: i.setAttribute("tabindex", "0");
+	});
+};
+
 
 // NAVIGATION
 
