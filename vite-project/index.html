@@ -17,20 +17,23 @@
             <button class="btn--nav site--link" aria-label="open mobile navigation" aria-expanded="false" aria-controls="mobileNav" id="mobileNavBtn"><svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg></button>
             <ul role="list" id="mobileNav" class="nav--links">
               <li>
-                <a href="/" class="nav--link site--link">Home</a>
+                <a href="/" tabindex="-1" class="nav--link site--link">Home</a>
               </li>
               <li>
                 <a href="/" class="nav--link site--link">New</a>
               </li>
               <li>
-                <a href="/" class="nav--link site--link">Popular</a>
+                <a href="/" tabindex="-1" class="nav--link site--link">Popular</a>
               </li>
               <li>
-                <a href="/" class="nav--link site--link">Trending</a>
+                <a href="/" tabindex="-1" class="nav--link site--link">Trending</a>
               </li>
               <li>
-                <a href="/" class="nav--link site--link">Categories</a>
+                <a href="/" tabindex="-1" class="nav--link site--link">Categories</a>
               </li>
+              <button id="closeBtn" class="site--link close--btn" aria-label="close mobile nav"><svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g>
+              </svg>
+            </button>
             </ul>
           </nav>
         </div>

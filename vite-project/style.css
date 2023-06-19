@@ -230,6 +230,7 @@ nav {
   display: grid;
   gap: var(--space-md);
   align-content: center;
+  min-width: 70vw;
   min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--neutral-off-white);
@@ -256,4 +257,12 @@ nav {
 .nav--link {
   text-decoration: none;
   color: var(--neutral-dark-blue);
+}
+
+.close--btn {
+  position: absolute;
+  background: none;
+  border: none;
+  top: var(--space-sm);
+  right: var(--space-sm);
 }
