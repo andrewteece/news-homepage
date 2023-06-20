@@ -38,7 +38,7 @@ const closeMobileNav = () => {
 	toggleTabIndexes([...navLinks, closeBtn]);
 };
 
-// EVENT LISTENERS 
+// EVENT LISTENERS
 
 mobileNavBtn.addEventListener('click', handleMobileNavClick);
 
