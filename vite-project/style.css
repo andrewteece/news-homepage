@@ -219,7 +219,19 @@ h3 {
 p {
   max-width: 60ch;
   line-height: 1.7;
-  color: var(--neutral-dark-gray);
+  color: var(--neutral-gray-blue);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* BTN */
@@ -363,7 +375,7 @@ nav {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 48rem) {
+@media (min-width: 56.25rem) {
   .body__wrapper {
     padding: var(--space-xl);
   }
@@ -385,5 +397,9 @@ nav {
 
   .flex--wrapper > * {
     flex: 1 1 40%;
+  }
+
+  [aria-labelledby="new__articles"] {
+    flex-basis: 23%;
   }
 }
