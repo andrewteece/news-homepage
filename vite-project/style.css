@@ -373,6 +373,30 @@ nav {
   margin-bottom: 0;
 }
 
+/* RATED ARTICLES SECTION */
+
+.article__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.top__article {
+  display: flex;
+  align-items: start;
+  gap: var(--space-sm);
+}
+
+.article__number {
+  font-size: var(--fs-600);
+  font-weight: 800;
+  color: var(--neutral-gray-blue);
+}
+
+.top__article--img {
+  width: var(--space-3xl);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 56.25rem) {
@@ -401,5 +425,9 @@ nav {
 
   [aria-labelledby="new__articles"] {
     flex-basis: 23%;
+  }
+
+  .top__article {
+    flex: 1 1 25%;
   }
 }
