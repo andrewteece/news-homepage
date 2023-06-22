@@ -13,26 +13,14 @@
 
   /* FONT SIZES */
 
-  /* Step -1: 11.67px → 14.14px */
-  --fs-300: clamp(0.73rem, calc(0.68rem + 0.23vw), 0.88rem);
-
-  /* Step 0: 14.00px → 20.00px */
-  --fs-400: clamp(0.88rem, calc(0.74rem + 0.56vw), 1.25rem);
-
-  /* Step 1: 16.80px → 28.28px */
-  --fs-500: clamp(1.05rem, calc(0.8rem + 1.08vw), 1.77rem);
-
-  /* Step 2: 20.16px → 39.99px */
-  --fs-600: clamp(1.26rem, calc(0.82rem + 1.86vw), 2.5rem);
-
-  /* Step 3: 24.19px → 56.54px */
-  --fs-700: clamp(1.51rem, calc(0.8rem + 3.04vw), 3.53rem);
-
-  /* Step 4: 29.03px → 79.95px */
-  --fs-800: clamp(1.81rem, calc(0.69rem + 4.78vw), 5rem);
-
-  /* Step 5: 34.84px → 113.05px */
-  --fs-900: clamp(2.18rem, calc(0.46rem + 7.34vw), 7.07rem);
+  
+  --fs-300: .875rem; /* 14px */
+  --fs-400: .9375rem; /* 15px */
+  --fs-500: 1.125rem; /* 18px */
+  --fs-600: 1.25rem; /* 20px */
+  --fs-700: 2rem; /* 32px */
+  --fs-800: 2.5rem; /* 40px */
+  --fs-900: 3.5rem; /* 56px */ 
 
   /* SPACING */
 
@@ -201,7 +189,7 @@ select {
 }
 
 h1 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-800);
   font-weight: 800;
   line-height: 1.1;
 }
@@ -349,12 +337,17 @@ nav {
 [aria-labelledby="new__articles"] {
   background-color: var(--neutral-dark-blue);
   color: var(--neutral-off-white);
-  padding: var(--space-md) var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
 }
 
 #new__articles {
   font-size: var(--fs-700);
   color: var(--primary-soft-orange);
+  padding-left: 2.375rem;
 }
 
 .new__article {
@@ -383,12 +376,13 @@ nav {
 
 .top__article {
   display: flex;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
   gap: var(--space-sm);
 }
 
 .article__number {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
   font-weight: 800;
   color: var(--neutral-gray-blue);
 }
@@ -399,7 +393,7 @@ nav {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 56.25rem) {
+@media (min-width: 48rem) {
   .body__wrapper {
     padding: var(--space-xl);
   }
@@ -428,6 +422,6 @@ nav {
   }
 
   .top__article {
-    flex: 1 1 25%;
+    flex: 1 1 10%;
   }
 }
