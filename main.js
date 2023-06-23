@@ -1,4 +1,4 @@
-import './style.css'
+
 
 const toggleOpenAttribute = (arrayOfItems) => {
 	arrayOfItems.forEach((i) => {
