@@ -275,6 +275,7 @@ nav {
   padding-inline: var(--space-md);
   background-color: var(--neutral-off-white);
   transform: translateX(100%);
+  list-style: none;
 }
 
 .nav--links[open] {
